@@ -1,0 +1,10 @@
+#define KP0 234
+#define KP1 225
+#define KP2 226
+#define KP3 227
+#define KP4 228
+#define KP5 229
+#define KP6 230
+#define KP7 231
+#define KP8 232
+#define KP9 233
