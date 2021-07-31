@@ -1,6 +1,6 @@
 {
     "programmer": "arduino:avrisp",
     "board": "arduino:avr:micro",
-    "port": "COM7",
+    "port": "COM9",
     "sketch": "20ButtonCRGController.ino"
 }
