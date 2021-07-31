@@ -27,6 +27,7 @@ Pushbutton button17(BUTTON_PIN17);
 Pushbutton button18(BUTTON_PIN18);
 Pushbutton button19(BUTTON_PIN19);
 
+
 void setup() {
 //Serial.begin(115200);
 Keyboard.begin();
@@ -348,5 +349,17 @@ if (button18.getSingleDebouncedPress())
     
     
   }
+  
+}
+
+void startJam() {
+  
+}
+
+void stopJam() {
+  
+}
+
+void startTimeout() {
   
 }
