@@ -5,7 +5,8 @@
 #include <Keyboard.h>
 #include "Keypad.h"
 #include "ButtonMap.h"
-
+#define DEFAULT_STATE_HIGH 1
+#define PULL_UP_ENABLED 1
 Pushbutton button0(BUTTON_PIN0);
 Pushbutton button1(BUTTON_PIN1);
 Pushbutton button2(BUTTON_PIN2);
@@ -29,25 +30,78 @@ Pushbutton button19(BUTTON_PIN19);
 
 
 void setup() {
-//Serial.begin(115200);
+Serial.begin(115200);
 Keyboard.begin();
-//0, 1, 2, 3, 7
+
+for(int i = 0; i <= 14; i++){
+  Serial.println(i);
+  pinMode( i-1, INPUT_PULLUP );
+  Serial.println(i);
+}
+
+
+attachInterrupt(digitalPinToInterrupt(BUTTON_PIN0), startJam, LOW);
+attachInterrupt(digitalPinToInterrupt(BUTTON_PIN1), stopJam, LOW);
+attachInterrupt(digitalPinToInterrupt(BUTTON_PIN2), startTimeout, LOW);
 }
 
 void loop() {
 
-
-  
 }
 
 void startJam() {
+
+   static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  // If interrupts come faster than 200ms, assume it's a bounce and ignore
+  if (interrupt_time - last_interrupt_time > 100)
+  {
+       // Serial.println("test");
+      Keyboard.press(KEY_LEFT_ALT);
+      Keyboard.press(KP2);
+      Keyboard.press(KP0);
+      Keyboard.press(KP6);
+      Keyboard.releaseAll();
+         }
+  last_interrupt_time = interrupt_time;
   
+
 }
 
 void stopJam() {
-  
+
+   static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  // If interrupts come faster than 200ms, assume it's a bounce and ignore
+  if (interrupt_time - last_interrupt_time > 100)
+  {
+     // Serial.println("test");
+    Keyboard.press(KEY_LEFT_ALT);
+    Keyboard.press(KP2);
+    Keyboard.press(KP0);
+    Keyboard.press(KP8);
+    Keyboard.releaseAll();
+    }
+  last_interrupt_time = interrupt_time;
+
+
+    
 }
 
 void startTimeout() {
-  
+
+   static unsigned long last_interrupt_time = 0;
+  unsigned long interrupt_time = millis();
+  // If interrupts come faster than 200ms, assume it's a bounce and ignore
+  if (interrupt_time - last_interrupt_time > 100)
+  {
+     // Serial.println("test");
+    Keyboard.press(KEY_LEFT_ALT);
+    Keyboard.press(KP2);
+    Keyboard.press(KP0);
+    Keyboard.press(KP5);
+    Keyboard.releaseAll();
+    }
+  last_interrupt_time = interrupt_time;
+
 }
