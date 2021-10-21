@@ -10,9 +10,7 @@
 
 #define DEFAULT_STATE_HIGH 1
 #define PULL_UP_ENABLED 1
-//Pushbutton button0(BUTTON_PIN0);
-//Pushbutton button1(BUTTON_PIN1);
-//Pushbutton button2(BUTTON_PIN2);
+
 Pushbutton button3(BUTTON_PIN3);
 Pushbutton button4(BUTTON_PIN4);
 Pushbutton button5(BUTTON_PIN5);

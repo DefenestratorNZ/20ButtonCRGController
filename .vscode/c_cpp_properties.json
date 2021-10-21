@@ -8,31 +8,33 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "C:/OneDrive/colin.murray/OneDrive - Whitireia and WelTec/Documents/PlatformIO/Projects/20ButtonCRGKeyboard/include",
-                "C:/OneDrive/colin.murray/OneDrive - Whitireia and WelTec/Documents/PlatformIO/Projects/20ButtonCRGKeyboard/src",
-                "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/cores/arduino",
-                "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/variants/micro",
-                "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
-                "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/libraries/HID/src",
-                "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
-                "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
-                "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
-                "",
-                "${workspaceFolder}/.pio/libdeps/micro/Pushbutton",
-                "${workspaceFolder}/.pio/libdeps/micro/Keyboard/src"
+                "C:/Github/20ButtonCRGController/include",
+                "C:/Github/20ButtonCRGController/src",
+                "C:/Github/20ButtonCRGController/.pio/libdeps/micro/Keyboard/src",
+                "C:/Users/storm/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Github/20ButtonCRGController/.pio/libdeps/micro/Pushbutton",
+                "C:/Users/storm/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/storm/.platformio/packages/framework-arduino-avr/variants/micro",
+                "C:/Users/storm/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/storm/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/storm/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "C:/Users/storm/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                ""
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "C:/OneDrive/colin.murray/OneDrive - Whitireia and WelTec/Documents/PlatformIO/Projects/20ButtonCRGKeyboard/include",
-                    "C:/OneDrive/colin.murray/OneDrive - Whitireia and WelTec/Documents/PlatformIO/Projects/20ButtonCRGKeyboard/src",
-                    "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/cores/arduino",
-                    "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/variants/micro",
-                    "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
-                    "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/libraries/HID/src",
-                    "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
-                    "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
-                    "C:/Users/colin.murray/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    "C:/Github/20ButtonCRGController/include",
+                    "C:/Github/20ButtonCRGController/src",
+                    "C:/Github/20ButtonCRGController/.pio/libdeps/micro/Keyboard/src",
+                    "C:/Users/storm/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "C:/Github/20ButtonCRGController/.pio/libdeps/micro/Pushbutton",
+                    "C:/Users/storm/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/storm/.platformio/packages/framework-arduino-avr/variants/micro",
+                    "C:/Users/storm/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "C:/Users/storm/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "C:/Users/storm/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "C:/Users/storm/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
                     ""
                 ]
             },
@@ -51,7 +53,7 @@
             ],
             "cStandard": "c11",
             "cppStandard": "c++11",
-            "compilerPath": "C:/Users/colin.murray/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerPath": "C:/Users/storm/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
             "compilerArgs": [
                 "-mmcu=atmega32u4",
                 ""
