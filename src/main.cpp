@@ -30,7 +30,7 @@ Pushbutton button18(BUTTON_PIN18);
 Pushbutton button19(BUTTON_PIN19);
 
 
-#include "intAttachedButtons.cpp"
+#include "intAttachedButtons.h"
 
 void setup() {
 Serial.begin(115200);
